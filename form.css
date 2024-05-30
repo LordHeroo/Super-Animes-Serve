@@ -1,0 +1,44 @@
+body{
+background-color: #00030C;
+display: flex;
+justify-content: center;
+margin-top: 10%;
+
+}
+
+#login__formulario_criacao_conta{
+    display: block;
+    width: 30em;
+    height: 15em;
+    background-color: aliceblue;
+    
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 1em;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 1em;
+    margin-bottom: 1.5em;
+    margin: 2%;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.5em 1.3em;
+    width: 95%;
+    text-align: center;
+    margin: 2%;
+    border: none;
+    cursor: pointer;
+  }

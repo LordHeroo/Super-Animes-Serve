@@ -1,0 +1,122 @@
+*{
+    list-style: none;
+}
+
+body{
+    background-color:black;
+    color: var(--cor-letra-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cabecalho__usuario{
+    height: 2.5em;
+    width: 2.5em;
+    background-image: url(../img/Usuário.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho__bara-pesquisa{
+    height: 3.2em;
+    width: 3.2em;
+    background-image: url(../img/pesquisa.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.cabecalho__usuario:hover{
+    color: aliceblue;
+    background-color: aliceblue;
+   
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    align-items: center;
+    position: relative;
+}
+
+
+.cabecalho__divisao{
+    align-items: center;
+}
+
+.cabecalho__imagem{
+    padding: 1em;
+}
+
+.cabecalho__lista-menu{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 60%;
+}
+
+.pesquisa__barra{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 69%;
+    background-color: transparent;
+    border-radius: 5em;
+    width: 500px;
+    padding: 1.5em; 
+    color: white;
+    font-size: 1em;
+    
+       
+}
+
+.pesquisa__barra::placeholder{
+font-family: var(--cor-letra-secundario);
+font-size: 1.5em;   
+color: white;
+background: url(../img/lupa.svg) no-repeat ;
+padding: 0 2em;
+
+}
+
+.cabecalho__pesquisa:checked~.pesquisa__barra{
+    display: block;
+}
+
+.cabecalho__pesquisa:checked~.lista__pesquisa{
+    display: block;
+}
+
+#menu:checked~.cabecalho__lista-menu{
+    display: block;
+}
+
+.cabecalho__lista-menu-links{
+    padding: 2em;
+    background-color: aliceblue;
+    color: black;
+}
+
+.cabecalho__texto{
+    font-size: 0.7em;
+    color: var(--cor-letra-secundario);
+    font-weight: 300;
+    font-family: var(--cor-letra-secundario);
+}
+
+.cabecalho__botao{
+    display: none;
+    color: aliceblue;
+}
+
+.pesquisa__barra{
+    display: none;
+}
+
+.carrocel__titulo{
+    color: white;
+}
